@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Экологическая документация — прайс | ООО «Омега-Удм», Ижевск</title>
+	<meta name="description"
+		content="Прайс на разработку экологической документации ООО «Омега-Удм» (Ижевск, Удмуртия): природоохранная документация, паспорта отходов, ПЭК, отчётность. Цены от 300 руб.">
+	<meta name="keywords"
+		content="экологическая документация, разработка документации, паспорт отходов, ПЭК, природоохранная документация, Ижевск, Удмуртия, Омега-Удм">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Экологическая документация — прайс | ООО «Омега-Удм»">
+	<meta property="og:description"
+		content="Разработка природоохранной документации, паспортов отходов, ПЭК в Ижевске и Удмуртии.">
+	<meta property="og:image" content="images/logo1_small.jpg">
+
+	<style>
+		:root {
+			--brand: #00c853;
+			--brand-hover: #00a344;
+			--brand-soft: #e6faed;
+			--ink: #0f172a;
+			--ink-2: #475569;
+			--ink-3: #94a3b8;
+			--line: #e2e8f0;
+			--bg: #f8fafc;
+			--card: #fff;
+			--radius: 16px;
+			--shadow-sm: 0 1px 2px rgba(15, 23, 42, .06), 0 1px 3px rgba(15, 23, 42, .10);
+			--shadow-lg: 0 20px 60px rgba(15, 23, 42, .12)
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		html {
+			scroll-behavior: smooth
+		}
+
+		body {
+			margin: 0;
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			color: var(--ink);
+			background: var(--bg);
+			-webkit-font-smoothing: antialiased
+		}
+
+		a {
+			color: var(--brand-hover);
+			text-decoration: none;
+			transition: color .15s
+		}
+
+		a:hover {
+			color: var(--brand)
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 24px
+		}
+
+		.topbar {
+			position: sticky;
+			top: 0;
+			z-index: 50;
+			background: rgba(255, 255, 255, .85);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			border-bottom: 1px solid var(--line)
+		}
+
+		.topbar-inner {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+			height: 72px
+		}
+
+		.brand {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			font-weight: 700;
+			color: var(--ink);
+			font-size: 18px;
+			letter-spacing: -.01em
+		}
+
+		.brand img {
+			width: 40px;
+			height: 40px;
+			border-radius: 10px;
+			object-fit: cover
+		}
+
+		.topnav {
+			display: flex;
+			gap: 4px;
+			flex: 1;
+			justify-content: center
+		}
+
+		.topnav a {
+			padding: 8px 14px;
+			border-radius: 8px;
+			color: var(--ink-2);
+			font-size: 15px;
+			font-weight: 500;
+			transition: background .15s, color .15s
+		}
+
+		.topnav a:hover {
+			background: var(--bg);
+			color: var(--ink)
+		}
+
+		.topnav a[aria-current="page"] {
+			background: var(--brand-soft);
+			color: var(--brand-hover)
+		}
+
+		.topbar-cta {
+			display: flex;
+			align-items: center;
+			gap: 16px
+		}
+
+		.topbar-cta .phone {
+			color: var(--ink);
+			font-weight: 600;
+			font-size: 15px;
+			white-space: nowrap
+		}
+
+		.topbar-cta .phone:hover {
+			color: var(--brand-hover)
+		}
+
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			padding: 12px 22px;
+			border-radius: 12px;
+			background: var(--brand);
+			color: #fff;
+			font-weight: 600;
+			font-size: 15px;
+			border: 0;
+			cursor: pointer;
+			box-shadow: 0 4px 14px rgba(0, 200, 83, .3);
+			white-space: nowrap;
+			transition: background .15s, transform .1s
+		}
+
+		.btn:hover {
+			background: var(--brand-hover);
+			color: #fff;
+			transform: translateY(-1px)
+		}
+
+		.btn-sm {
+			padding: 9px 16px;
+			font-size: 14px
+		}
+
+		.page-head {
+			padding: 56px 0 32px;
+			background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+			border-bottom: 1px solid var(--line)
+		}
+
+		.breadcrumbs {
+			font-size: 14px;
+			color: var(--ink-3);
+			margin-bottom: 12px
+		}
+
+		.breadcrumbs a {
+			color: var(--ink-2)
+		}
+
+		.breadcrumbs span {
+			margin: 0 6px
+		}
+
+		.page-head h1 {
+			font-size: clamp(26px, 4vw, 38px);
+			line-height: 1.15;
+			margin: 0 0 12px;
+			font-weight: 800;
+			letter-spacing: -.02em
+		}
+
+		.page-head p {
+			color: var(--ink-2);
+			font-size: 17px;
+			margin: 0;
+			max-width: 720px
+		}
+
+		.section {
+			padding: 56px 0
+		}
+
+		/* ===== Таблица ===== */
+		.table-wrap {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: var(--radius);
+			box-shadow: var(--shadow-sm);
+			overflow: hidden;
+			margin-bottom: 24px
+		}
+
+		.price-table {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 15px
+		}
+
+		.price-table th {
+			background: var(--brand);
+			color: #fff;
+			text-align: left;
+			padding: 14px 18px;
+			font-weight: 700;
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: .04em
+		}
+
+		.price-table td {
+			padding: 16px 18px;
+			border-bottom: 1px solid #f1f5f9;
+			vertical-align: middle
+		}
+
+		.price-table tbody tr:last-child td {
+			border-bottom: 0
+		}
+
+		.price-table tbody tr:hover {
+			background: rgba(0, 200, 83, .04)
+		}
+
+		.price-table .num {
+			width: 60px;
+			text-align: center;
+			color: var(--ink-3);
+			font-weight: 600
+		}
+
+		.price-table .unit {
+			width: 100px;
+			text-align: center;
+			color: var(--ink-2);
+			white-space: nowrap
+		}
+
+		.price-table .price {
+			width: 180px;
+			text-align: right;
+			font-weight: 700;
+			color: var(--brand-hover);
+			font-size: 16px;
+			white-space: nowrap
+		}
+
+		.price-table th.num,
+		.price-table th.unit,
+		.price-table th.price {
+			text-align: center
+		}
+
+		.price-table .name {
+			font-weight: 500;
+			color: var(--ink)
+		}
+
+		.price-table .name small {
+			display: block;
+			font-size: 13px;
+			color: var(--ink-3);
+			font-weight: 400;
+			margin-top: 2px
+		}
+
+		.price-note {
+			padding: 16px 20px;
+			background: var(--brand-soft);
+			border-left: 4px solid var(--brand);
+			border-radius: 8px;
+			font-size: 14px;
+			color: var(--ink-2);
+			margin-top: 24px
+		}
+
+		.price-note strong {
+			color: var(--ink)
+		}
+
+		.price-note a {
+			font-weight: 600
+		}
+
+		.back-link {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			font-size: 14px;
+			color: var(--ink-2);
+			margin-bottom: 20px
+		}
+
+		.back-link:hover {
+			color: var(--brand-hover)
+		}
+
+		/* ===== Info blocks ===== */
+		.info-grid {
+			display: grid;
+			gap: 20px;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			margin-bottom: 40px
+		}
+
+		.info-card {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: var(--radius);
+			padding: 24px;
+			box-shadow: var(--shadow-sm)
+		}
+
+		.info-card .label {
+			font-size: 12px;
+			color: var(--ink-3);
+			text-transform: uppercase;
+			letter-spacing: .08em;
+			font-weight: 700;
+			margin-bottom: 8px
+		}
+
+		.info-card h3 {
+			font-size: 16px;
+			margin: 0 0 8px;
+			font-weight: 700;
+			color: var(--ink)
+		}
+
+		.info-card p {
+			margin: 0;
+			color: var(--ink-2);
+			font-size: 14px;
+			line-height: 1.55
+		}
+
+		/* ===== CTA band ===== */
+		.cta-band {
+			background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+			color: #fff;
+			padding: 64px 0;
+			text-align: center
+		}
+
+		.cta-band h2 {
+			font-size: clamp(22px, 3vw, 32px);
+			margin: 0 0 12px;
+			font-weight: 700;
+			letter-spacing: -.02em
+		}
+
+		.cta-band p {
+			color: #cbd5e1;
+			margin: 0 0 28px;
+			font-size: 16px
+		}
+
+		.cta-band .btn {
+			background: var(--brand);
+			color: #fff
+		}
+
+		.cta-band .btn:hover {
+			background: #00e05e;
+			color: #fff
+		}
+
+		.cta-band .cta-phone {
+			display: block;
+			margin-top: 20px;
+			font-size: clamp(22px, 3vw, 30px);
+			font-weight: 800;
+			color: var(--brand);
+			letter-spacing: -.01em
+		}
+
+		.cta-band .cta-phone:hover {
+			color: #00e05e
+		}
+
+		/* ===== Footer ===== */
+		.footer {
+			background: #0f172a;
+			color: #cbd5e1;
+			padding: 64px 0 32px;
+			font-size: 14px
+		}
+
+		.footer-grid {
+			display: grid;
+			gap: 40px;
+			grid-template-columns: 1.4fr 1fr 1fr;
+			margin-bottom: 48px
+		}
+
+		.footer h4 {
+			color: #fff;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: .08em;
+			margin: 0 0 16px;
+			font-weight: 700
+		}
+
+		.footer a {
+			color: #cbd5e1;
+			display: block;
+			padding: 5px 0;
+			transition: color .15s
+		}
+
+		.footer a:hover {
+			color: var(--brand)
+		}
+
+		.footer-brand p {
+			margin: 0 0 16px;
+			line-height: 1.6
+		}
+
+		.footer-bottom {
+			padding-top: 24px;
+			border-top: 1px solid #1e293b;
+			text-align: center;
+			color: #64748b;
+			font-size: 13px
+		}
+
+		.skip-link {
+			position: absolute;
+			left: -9999px;
+			top: 0;
+			z-index: 100;
+			padding: 8px 16px;
+			background: #000;
+			color: #fff
+		}
+
+		.skip-link:focus {
+			left: 8px;
+			top: 8px
+		}
+
+		@media (max-width:960px) {
+			.topnav {
+				display: none
+			}
+
+			.topbar-cta .phone {
+				display: none
+			}
+
+			.page-head {
+				padding: 40px 0 24px
+			}
+
+			.section {
+				padding: 40px 0
+			}
+
+			.footer-grid {
+				grid-template-columns: 1fr 1fr
+			}
+		}
+
+		@media (max-width:600px) {
+			.container {
+				padding: 0 16px
+			}
+
+			.footer-grid {
+				grid-template-columns: 1fr;
+				gap: 32px
+			}
+
+			.price-table {
+				font-size: 13px
+			}
+
+			.price-table th,
+			.price-table td {
+				padding: 12px 10px
+			}
+
+			.price-table .num {
+				width: 36px
+			}
+
+			.price-table .price {
+				width: 130px;
+				font-size: 14px
+			}
+
+			.table-wrap {
+				overflow-x: auto
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+	<header class="topbar">
+		<div class="container topbar-inner">
+			<a href="index.html" class="brand"><img src="images/logo1_small.jpg" alt="Омега-Удм" width="40"
+					height="40"><span>Омега-Удм</span></a>
+			<nav class="topnav" aria-label="Основное меню">
+				<a href="index.html">Главная</a><a href="docs.html">Документация</a><a href="service.html">Услуги</a>
+				<a href="prices.html">Цены</a><a href="equipment.html">Техника</a><a href="ecodocs.html"
+					aria-current="page">Экодокументация</a>
+			</nav>
+			<div class="topbar-cta">
+				<a href="tel:+73412561667" class="phone">8 (3412) 56-16-67</a>
+				<a href="mailto:omega.udm@yandex.ru" class="btn btn-sm">Написать</a>
+			</div>
+		</div>
+	</header>
+
+	<main id="main">
+
+		<section class="page-head">
+			<div class="container">
+				<nav class="breadcrumbs" aria-label="Хлебные крошки">
+					<a href="index.html">Главная</a><span aria-hidden="true">/</span>
+					Экологическая документация
+				</nav>
+				<h1>Экологическая документация</h1>
+				<p>Полный комплекс работ по подготовке и сдаче отчётности в надзорные органы — от проекта до
+					согласования.</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+
+				<div class="info-grid">
+
+					<div class="info-card">
+						<div class="label">Что делаем</div>
+						<h3>Разработка документации</h3>
+						<p>ПНООЛР, паспорта отходов, ПЭК, проекты нормативов, расчёты платы за НВОС.</p>
+					</div>
+
+					<div class="info-card">
+						<div class="label">Сопровождение</div>
+						<h3>Сдача отчётности</h3>
+						<p>2-ТП (отходы), 2-ТП (воздух), 2-ТП (водхоз), 4-ОС. Помогаем правильно заполнить и сдать.</p>
+					</div>
+
+					<div class="info-card">
+						<div class="label">Консалтинг</div>
+						<h3>Экологические консультации</h3>
+						<p>Разъясним требования Росприроднадзора, поможем избежать штрафов при проверках.</p>
+					</div>
+
+				</div>
+
+				<a class="back-link" href="prices.html">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<line x1="19" y1="12" x2="5" y2="12" />
+						<polyline points="12 19 5 12 12 5" />
+					</svg>
+					Все прайс-листы
+				</a>
+
+				<div class="table-wrap">
+					<table class="price-table">
+						<thead>
+							<tr>
+								<th class="num">№</th>
+								<th>Наименование</th>
+								<th class="unit">Ед. изм.</th>
+								<th class="price">Стоимость, руб.</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<!-- УТОЧНИТЕ название -->
+							<tr>
+								<td class="num">1</td>
+								<td class="name">Природоохранная документация предприятия</td>
+								<td class="unit" rowspan="6">шт.</td>
+								<td class="price">от 500-00</td>
+							</tr>
+
+							<!-- УТОЧНИТЕ: в оригинале упоминался проект «Расчёт по образованию» -->
+							<tr>
+								<td class="num">2</td>
+								<td class="name">
+									Проект нормативов образования отходов
+									<small>Проект «Расчёт по образованию»</small>
+								</td>
+								<td class="price">от 6 000-00</td>
+							</tr>
+
+							<!-- УТОЧНИТЕ -->
+							<tr>
+								<td class="num">3</td>
+								<td class="name">Экологический отчёт</td>
+								<td class="price">от 300-00</td>
+							</tr>
+
+							<!-- УТОЧНИТЕ -->
+							<tr>
+								<td class="num">4</td>
+								<td class="name">Экологический паспорт</td>
+								<td class="price">от 1 800-00</td>
+							</tr>
+
+							<!-- УТОЧНИТЕ -->
+							<tr>
+								<td class="num">5</td>
+								<td class="name">
+									Стоимость получения документации
+									<small>по согласованию</small>
+								</td>
+								<td class="price">от 12 000-00</td>
+							</tr>
+
+							<!-- Восстановлено уверенно -->
+							<tr>
+								<td class="num">6</td>
+								<td class="name">Стоимость ПЭК</td>
+								<td class="price">от 25 000-00</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+				<p class="price-note">
+					<strong>Экологические консультации — бесплатно.</strong>
+					Звоните: <a href="tel:+73412561667">8 (3412) 56-16-67</a>,
+					<a href="tel:+79128561667">+7 912 856-16-67</a>.
+				</p>
+
+			</div>
+		</section>
+
+		<section class="cta-band">
+			<div class="container">
+				<h2>Нужна помощь с экологической документацией?</h2>
+				<p>Разработаем, согласуем и сдадим отчётность за вас. Работаем по всей Удмуртии.</p>
+				<a href="mailto:omega.udm@yandex.ru" class="btn">Запросить расчёт</a>
+				<a href="tel:+73412561667" class="cta-phone">8 (3412) 561-667</a>
+			</div>
+		</section>
+
+	</main>
+
+<footer class="footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-brand">
+					<h4>ООО "ФИРМА "ОМЕГА-ПЛЮС"</h4>
+					<p>Вывоз, утилизация и размещение отходов I–IV классов опасности. Экологическое сопровождение
+						предприятий.</p>
+					<p>426008, Удмуртская Республика,<br>г. Ижевск, ул. Пойма 17</p>
+				</div>
+				<div>
+					<h4>Контакты</h4>
+					<a href="tel:+73412561667">8 (3412) 56-16-67</a>
+					<a href="tel:+79128561667">+7 912 856-16-67</a>
+					<a href="mailto:omega.udm@yandex.ru">omega.udm@yandex.ru</a>
+				</div>
+				<div>
+					<h4>Разделы</h4>
+					<a href="index.html">Главная</a>
+					<a href="docs.html">Документация</a>
+					<a href="service.html">Услуги</a>
+					<a href="prices.html">Цены</a>
+					<a href="equipment.html">Наша техника</a>
+					<a href="ecodocs.html">Экологическая документация</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© <span id="year">2026</span> ООО "ФИРМА "ОМЕГА-ПЛЮС">
+			</div>
+	</footer>
+	<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

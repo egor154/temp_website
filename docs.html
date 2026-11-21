@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Лицензия и приложения — ООО «Омега-Удм»</title>
+  <meta name="description"
+    content="Лицензия ООО «Омега-Удм» № Л020-00113-18/00037584 на деятельность по сбору, транспортированию, обработке, утилизации, обезвреживанию, размещению отходов I–IV классов опасности и приложения к ней. Скан-копии документов.">
+  <meta name="keywords"
+    content="лицензия Омега-Удм, Л020-00113-18/00037584, приложения к лицензии, обращение с отходами, Ижевск, Удмуртия">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ООО «Омега-Удм»">
+  <meta property="og:title" content="Лицензия и приложения — ООО «Омега-Удм»">
+  <meta property="og:description" content="Лицензия № Л020-00113-18/00037584 и приложения к ней.">
+  <meta property="og:image" content="images/logo1_small.jpg">
+
+  <style>
+    /* ===== Design tokens ===== */
+    :root {
+      --brand: #00c853;
+      --brand-hover: #00a344;
+      --brand-soft: #e6faed;
+      --ink: #0f172a;
+      --ink-2: #475569;
+      --ink-3: #94a3b8;
+      --line: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --radius: 16px;
+      --shadow-sm: 0 1px 2px rgba(15, 23, 42, .06), 0 1px 3px rgba(15, 23, 42, .10);
+      --shadow: 0 4px 20px rgba(15, 23, 42, .06);
+      --shadow-lg: 0 20px 60px rgba(15, 23, 42, .12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--brand-hover);
+      text-decoration: none;
+      transition: color .15s;
+    }
+
+    a:hover {
+      color: var(--brand);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== Topbar ===== */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, .85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      color: var(--ink);
+      font-size: 18px;
+      letter-spacing: -.01em;
+    }
+
+    .brand img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .topnav {
+      display: flex;
+      gap: 4px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .topnav a {
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: var(--ink-2);
+      font-size: 15px;
+      font-weight: 500;
+      transition: background .15s, color .15s;
+    }
+
+    .topnav a:hover {
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    .topnav a[aria-current="page"] {
+      background: var(--brand-soft);
+      color: var(--brand-hover);
+    }
+
+    .topbar-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .topbar-cta .phone {
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .topbar-cta .phone:hover {
+      color: var(--brand-hover);
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      border: 0;
+      cursor: pointer;
+      transition: background .15s, transform .1s, box-shadow .15s;
+      box-shadow: 0 4px 14px rgba(0, 200, 83, .3);
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      background: var(--brand-hover);
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(0, 200, 83, .35);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-sm {
+      padding: 9px 16px;
+      font-size: 14px;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      box-shadow: none;
+      border: 1.5px solid var(--line);
+    }
+
+    .btn-ghost:hover {
+      background: var(--bg);
+      color: var(--ink);
+      border-color: var(--ink-3);
+      box-shadow: none;
+    }
+
+    /* ===== Page header (компактный, для внутренних страниц) ===== */
+    .page-head {
+      padding: 56px 0 32px;
+      background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .breadcrumbs {
+      font-size: 14px;
+      color: var(--ink-3);
+      margin-bottom: 12px;
+    }
+
+    .breadcrumbs a {
+      color: var(--ink-2);
+    }
+
+    .breadcrumbs a:hover {
+      color: var(--brand-hover);
+    }
+
+    .breadcrumbs span {
+      margin: 0 6px;
+    }
+
+    .page-head h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      margin: 0 0 12px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--ink);
+    }
+
+    .page-head p {
+      color: var(--ink-2);
+      font-size: 17px;
+      margin: 0;
+      max-width: 720px;
+    }
+
+    /* ===== Sections ===== */
+    .section {
+      padding: 56px 0;
+    }
+
+    /* ===== Info card ===== */
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 40px;
+    }
+
+    .info-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .info-card .value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+
+    .info-card p {
+      color: var(--ink-2);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .info-card p+p {
+      margin-top: 8px;
+    }
+
+    /* ===== Сетка документов ===== */
+    .doc-section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .doc-section-head h2 {
+      font-size: clamp(22px, 3vw, 28px);
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: var(--ink);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-hover);
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .doc-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .doc-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--ink);
+      box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--brand);
+    }
+
+    .doc-thumb {
+      aspect-ratio: 3 / 4;
+      background: #f1f5f9;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .doc-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .3s;
+    }
+
+    .doc-card:hover .doc-thumb img {
+      transform: scale(1.04);
+    }
+
+    .doc-card figcaption {
+      padding: 14px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      border-top: 1px solid var(--line);
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .doc-card figcaption small {
+      display: block;
+      font-size: 12px;
+      color: var(--ink-3);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .doc-card:hover figcaption {
+      color: var(--brand-hover);
+    }
+
+    /* ===== CTA band ===== */
+    .cta-band {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff;
+      padding: 64px 0;
+      text-align: center;
+    }
+
+    .cta-band h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      margin: 0 0 12px;
+      font-weight: 700;
+      letter-spacing: -.02em;
+    }
+
+    .cta-band p {
+      color: #cbd5e1;
+      margin: 0 0 28px;
+      font-size: 16px;
+    }
+
+    .cta-band .btn {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .cta-band .btn:hover {
+      background: #00e05e;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .cta-band .cta-phone {
+      display: block;
+      margin-top: 20px;
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: -.01em;
+    }
+
+    .cta-band .cta-phone:hover {
+      color: #00e05e;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 64px 0 32px;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      margin-bottom: 48px;
+    }
+
+    .footer h4 {
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin: 0 0 16px;
+      font-weight: 700;
+    }
+
+    .footer a {
+      color: #cbd5e1;
+      display: block;
+      padding: 5px 0;
+      transition: color .15s;
+    }
+
+    .footer a:hover {
+      color: var(--brand);
+    }
+
+    .footer-brand p {
+      margin: 0 0 16px;
+      line-height: 1.6;
+    }
+
+    .footer-brand a {
+      display: inline;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .footer-bottom a {
+      display: inline;
+      color: #94a3b8;
+    }
+
+    /* ===== Skip link ===== */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      padding: 8px 16px;
+      background: #000;
+      color: #fff;
+    }
+
+    .skip-link:focus {
+      left: 8px;
+      top: 8px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 960px) {
+      .topnav {
+        display: none;
+      }
+
+      .topbar-cta .phone {
+        display: none;
+      }
+
+      .page-head {
+        padding: 40px 0 24px;
+      }
+
+      .section {
+        padding: 40px 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .doc-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .doc-card figcaption {
+        padding: 10px 8px;
+        font-size: 13px;
+      }
+
+      .doc-section-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo1_small.jpg" alt="Омега-Удм" width="40" height="40">
+        <span>Омега-Удм</span>
+      </a>
+      <nav class="topnav" aria-label="Основное меню">
+        <a href="index.html">Главная</a>
+        <a href="docs.html" aria-current="page">Документация</a>
+        <a href="service.html">Услуги</a>
+        <a href="prices.html">Цены</a>
+        <a href="equipment.html">Техника</a>
+        <a href="ecodocs.html">Экодокументация</a>
+      </nav>
+      <div class="topbar-cta">
+        <a href="tel:+73412561667" class="phone">8 (3412) 56-16-67</a>
+        <a href="mailto:omega.udm@yandex.ru" class="btn btn-sm">Написать</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span aria-hidden="true">/</span>
+          Документация
+        </nav>
+        <h1>Лицензия и документы</h1>
+        <p>Полный пакет разрешительных документов на обращение с отходами I–IV классов опасности. Скан-копии открываются
+          в полном размере по клику.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="info-card">
+          <div class="label">Действующая лицензия</div>
+          <div class="value">№ Л020-00113-18/00037584 от 22.12.2016</div>
+          <p>Выдана Западно-Уральским межрегиональным управлением Росприроднадзора.</p>
+          <p>Виды деятельности: сбор, транспортирование, обработка, утилизация, обезвреживание, размещение отходов I–IV
+            классов опасности.</p>
+        </div>
+
+        <div class="doc-section-head">
+          <h2>Скан-копии документов</h2>
+          <span class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            6 документов
+          </span>
+        </div>
+
+        <div class="doc-grid">
+
+          <a class="doc-card" href="images/licence.jpg" target="_blank" rel="noopener"
+            aria-label="Открыть Лицензию в новой вкладке">
+            <div class="doc-thumb">
+              <img src="images/licence.jpg" alt="Лицензия ООО «Омега-Удм»" loading="lazy">
+            </div>
+            <figcaption>
+              Лицензия
+              <small>Открыть в полном размере →</small>
+            </figcaption>
+          </a>
+
+          <a class="doc-card" href="images/licence1.jpg" target="_blank" rel="noopener"
+            aria-label="Открыть Приложение к лицензии, лист 1">
+            <div class="doc-thumb">
+              <img src="images/licence1.jpg" alt="Приложение к лицензии, лист 1" loading="lazy">
+            </div>
+            <figcaption>
+              Приложение
+              <small>Лист 1 →</small>
+            </figcaption>
+          </a>
+
+          <a class="doc-card" href="images/licence2.jpg" target="_blank" rel="noopener"
+            aria-label="Открыть Приложение к лицензии, лист 2">
+            <div class="doc-thumb">
+              <img src="images/licence2.jpg" alt="Приложение к лицензии, лист 2" loading="lazy">
+            </div>
+            <figcaption>
+              Приложение
+              <small>Лист 2 →</small>
+            </figcaption>
+          </a>
+
+          <a class="doc-card" href="images/licence3.jpg" target="_blank" rel="noopener"
+            aria-label="Открыть Приложение к лицензии, лист 3">
+            <div class="doc-thumb">
+              <img src="images/licence3.jpg" alt="Приложение к лицензии, лист 3" loading="lazy">
+            </div>
+            <figcaption>
+              Приложение
+              <small>Лист 3 →</small>
+            </figcaption>
+          </a>
+
+          <a class="doc-card" href="images/licence4.jpg" target="_blank" rel="noopener"
+            aria-label="Открыть Приложение к лицензии, лист 4">
+            <div class="doc-thumb">
+              <img src="images/licence4.jpg" alt="Приложение к лицензии, лист 4" loading="lazy">
+            </div>
+            <figcaption>
+              Приложение
+              <small>Лист 4 →</small>
+            </figcaption>
+          </a>
+
+          <a class="doc-card" href="images/licence5.jpg" target="_blank" rel="noopener"
+            aria-label="Открыть Приложение к лицензии, лист 5">
+            <div class="doc-thumb">
+              <img src="images/licence5.jpg" alt="Приложение к лицензии, лист 5" loading="lazy">
+            </div>
+            <figcaption>
+              Приложение
+              <small>Лист 5 →</small>
+            </figcaption>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Нужны копии документов или коммерческое предложение?</h2>
+        <p>Пришлём заверенные копии, рассчитаем стоимость и заключим договор.</p>
+        <a href="mailto:omega.udm@yandex.ru" class="btn">Запросить по почте</a>
+        <a href="tel:+73412561667" class="cta-phone">8 (3412) 561-667</a>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-brand">
+					<h4>ООО "ФИРМА "ОМЕГА-ПЛЮС"</h4>
+					<p>Вывоз, утилизация и размещение отходов I–IV классов опасности. Экологическое сопровождение
+						предприятий.</p>
+					<p>426008, Удмуртская Республика,<br>г. Ижевск, ул. Пойма 17</p>
+				</div>
+				<div>
+					<h4>Контакты</h4>
+					<a href="tel:+73412561667">8 (3412) 56-16-67</a>
+					<a href="tel:+79128561667">+7 912 856-16-67</a>
+					<a href="mailto:omega.udm@yandex.ru">omega.udm@yandex.ru</a>
+				</div>
+				<div>
+					<h4>Разделы</h4>
+					<a href="index.html">Главная</a>
+					<a href="docs.html">Документация</a>
+					<a href="service.html">Услуги</a>
+					<a href="prices.html">Цены</a>
+					<a href="equipment.html">Наша техника</a>
+					<a href="ecodocs.html">Экологическая документация</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© <span id="year">2026</span> ООО "ФИРМА "ОМЕГА-ПЛЮС">
+			</div>
+	</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
